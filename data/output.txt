@@ -1,0 +1,128 @@
+[
+    {
+        "question": "在照片中，您的臉看起來很油光：",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "有時"},
+        "choice_c": {"value": 3, "text": "經常"},
+        "choice_d": {"value": 4, "text": "總是"}
+    },
+    {
+        "question": "如果您只上粉底不上散粉，兩到三小時後您的妝容會看起來：",
+        "choice_a": {"value": 1, "text": "斑駁或結塊"},
+        "choice_b": {"value": 2, "text": "平滑"},
+        "choice_c": {"value": 3, "text": "發亮"},
+        "choice_d": {"value": 4, "text": "條紋和發亮"},
+        "choice_e": {"value": 2.5, "text": "我不使用粉底"}
+    },
+    {
+        "question": "如果您不使用保濕霜，您的臉部皮膚感覺緊繃：",
+        "choice_a": {"value": 4, "text": "總是"},
+        "choice_b": {"value": 2, "text": "有時"},
+        "choice_c": {"value": 1, "text": "很少"},
+        "choice_d": {"value": 1, "text": "從不"}
+    },
+    {
+        "question": "您有堵塞的毛孔（黑頭或白頭）：",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "很少"},
+        "choice_c": {"value": 3, "text": "有時"},
+        "choice_d": {"value": 4, "text": "總是"}
+    },
+    {
+        "question": "護膚產品（包括潔面乳、保濕霜、爽膚水和化妝品）會導致您的臉部出現痤瘡、發疹、發癢或刺痛：",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "很少"},
+        "choice_c": {"value": 3, "text": "經常"},
+        "choice_d": {"value": 4, "text": "總是"}
+    },
+    {
+        "question": "您是否曾被診斷出痤瘡或酒渣鼻？",
+        "choice_a": {"value": 1, "text": "沒有"},
+        "choice_b": {"value": 2, "text": "朋友說我有"},
+        "choice_c": {"value": 3, "text": "是"},
+        "choice_d": {"value": 4, "text": "是，嚴重情況"}
+    },
+    {
+        "question": "防曬霜會使您的皮膚發癢、灼熱、起疹子或變紅：",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "很少"},
+        "choice_c": {"value": 3, "text": "經常"},
+        "choice_d": {"value": 4, "text": "總是"}
+    },
+    {
+        "question": "您可以在臉部和身體上使用普通肥皂而沒有問題嗎？",
+        "choice_a": {"value": 1, "text": "可以"},
+        "choice_b": {"value": 2, "text": "大多數時間可以"},
+        "choice_c": {"value": 3, "text": "不可以"}
+    },
+    {
+        "question": "您的上唇或臉頰有任何深色斑點嗎？",
+        "choice_a": {"value": 1, "text": "沒有"},
+        "choice_b": {"value": 2, "text": "不確定"},
+        "choice_c": {"value": 3, "text": "有，但不太明顯"},
+        "choice_d": {"value": 4, "text": "有，非常明顯"}
+    },
+    {
+        "question": "當您曬太陽時，臉上的深色斑點會加重嗎？",
+        "choice_a": {"value": 1, "text": "我沒有深色斑點"},
+        "choice_b": {"value": 2, "text": "不確定"},
+        "choice_c": {"value": 3, "text": "稍微加重"},
+        "choice_d": {"value": 4, "text": "加重很多"}
+    },
+    {
+        "question": "您的自然頭髮顏色是什麼？",
+        "choice_a": {"value": 1, "text": "金色"},
+        "choice_b": {"value": 2, "text": "棕色"},
+        "choice_c": {"value": 3, "text": "黑色"},
+        "choice_d": {"value": 4, "text": "紅色"}
+    },
+    {
+        "question": "當您曬太陽時，您會長雀斑嗎？",
+        "choice_a": {"value": 1, "text": "沒有"},
+        "choice_b": {"value": 2, "text": "一些"},
+        "choice_c": {"value": 3, "text": "經常"},
+        "choice_d": {"value": 4, "text": "我的皮膚已經很黑，所以很難說"},
+        "choice_e": {"value": 2.5, "text": "我從不曬太陽"}
+    },
+    {
+        "question": "當您幾個月後第一次曬太陽時，您的皮膚會：",
+        "choice_a": {"value": 1, "text": "只曬傷"},
+        "choice_b": {"value": 2, "text": "曬傷然後變黑"},
+        "choice_c": {"value": 3, "text": "變黑"}
+    },
+    {
+        "question": "您有臉部皺紋嗎？",
+        "choice_a": {"value": 1, "text": "沒有，即使是動作時也沒有"},
+        "choice_b": {"value": 2, "text": "只有在我動臉時"},
+        "choice_c": {"value": 3, "text": "動作時和休息時都有一些"},
+        "choice_d": {"value": 4, "text": "即使我不笑或皺眉，也有皺紋"}
+    },
+    {
+        "question": "您一生中是否有持續曬太陽超過兩周每年？如果有，總共多少年？請計算任何戶外活動，如打高爾夫球、戶外工作等。",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "一到五年"},
+        "choice_c": {"value": 3, "text": "五到十年"},
+        "choice_d": {"value": 4, "text": "超過十年"}
+    },
+    {
+        "question": "您一生中是否曾經進行過每年不超過兩周的季節性曬太陽？（包括暑假）如果有，多久一次？",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "一到五年"},
+        "choice_c": {"value": 3, "text": "五到十年"},
+        "choice_d": {"value": 4, "text": "超過十年"}
+    },
+    {
+        "question": "您曾經多少次使用過日光浴床？",
+        "choice_a": {"value": 1, "text": "從不"},
+        "choice_b": {"value": 2, "text": "一到五次"},
+        "choice_c": {"value": 3, "text": "五到十次"},
+        "choice_d": {"value": 4, "text": "很多次"}
+    },
+    {
+        "question": "您的自然皮膚顏色（未曬太陽時）是什麼？",
+        "choice_a": {"value": 1, "text": "深色"},
+        "choice_b": {"value": 2, "text": "中等"},
+        "choice_c": {"value": 3, "text": "淺色"},
+        "choice_d": {"value": 4, "text": "非常淺色"}
+    }
+]

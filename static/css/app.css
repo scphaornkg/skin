@@ -1,0 +1,66 @@
+body {
+	background: #ddd url("/static/img/field.jpg") fixed no-repeat top left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+footer {
+	margin-top: 90px;
+}
+
+.flashes {
+	margin-top: 90px;
+	text-align: center;
+}
+
+.questionbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.resultbox {
+	display: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.progress-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.progress-container i {
+	font-size: 2rem;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.progress {
+	height: 30px;
+	width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.progress-bar {
+	line-height: 30px;
+	font-size: 16px;
+	border-radius: 15px;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.icon {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
