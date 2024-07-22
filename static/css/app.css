@@ -1,66 +1,139 @@
 body {
-	background: #ddd url("../img/field.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+    background: #ddd url("../img/field.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 footer {
-	margin-top: 90px;
+    margin-top: 90px;
 }
 
 .flashes {
-	margin-top: 90px;
-	text-align: center;
+    margin-top: 90px;
+    text-align: center;
 }
 
 .questionbox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .resultbox {
-	display: none;
-	text-align: center;
-	margin-top: 20px;
+    display: none;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .progress-container {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .progress-container i {
-	font-size: 2rem;
-	margin-right: 10px;
-	vertical-align: middle;
+    font-size: 2rem;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .progress {
-	height: 30px;
-	width: 100%;
-	border-radius: 15px;
-	overflow: hidden;
+    height: 30px;
+    width: 60%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 10px;
 }
 
 .progress-bar {
-	line-height: 30px;
-	font-size: 16px;
-	border-radius: 15px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.progress-label {
+    font-size: 2rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 20%;
+    text-align: center;
+	margin-bottom: 20px;
 }
 
 .container {
-	 
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .icon {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-h2 {
-	margin-bottom: 20px;
+.h2 {
+    margin-bottom: 20px;
+}
+
+.intro-page {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-page h1 {
+    font-size: 5vw;
+}
+
+.intro-page p {
+    font-size: 2vw;
+}
+
+.intro-page .continue-button {
+    font-size: 3vw;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .intro-page h1 {
+        font-size: 12vw;
+    }
+
+    .intro-page p {
+        font-size: 5.5vw;
+    }
+
+    .intro-page .continue-button {
+        font-size: 7vw;
+    }
+}
+
+.flexWidth h2 {
+    font-size: 2vw !important;
+}
+
+.flexWidth label {
+    font-size: 1.5vw !important;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .flexWidth h2 {
+        font-size: 4vw !important;
+    }
+
+    .flexWidth label {
+        font-size: 3vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .flexWidth h2 {
+        font-size: 8vw !important;
+    }
+
+    .flexWidth label {
+        font-size: 6vw !important;
+    }
 }
