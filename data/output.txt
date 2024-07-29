@@ -518,7 +518,7 @@
                 "choices": [
                     {"value": 1, "text": "從不"},
                     {"value": 2, "text": "不到5次"},
-                    {"value": 3, "text": "5-10年次},
+                    {"value": 3, "text": "5-10年次"},
                     {"value": 4, "text": "超過10次"}
                 ]
             },

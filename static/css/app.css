@@ -130,10 +130,10 @@ footer {
 
 @media (max-width: 768px) {
     .flexWidth h2 {
-        font-size: 8vw !important;
+        font-size: 7vw !important;
     }
 
     .flexWidth label {
-        font-size: 6vw !important;
+        font-size: 5vw !important;
     }
 }
