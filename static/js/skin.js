@@ -67,7 +67,8 @@ $(document).ready(function () {
 
                     questionHtml += `
                         </ul>
-                        <button type="button" class="btn btn-secondary back-button">返回上一题</button>
+                        <button type="button" class="btn btn-secondary back-button">上一題</button>
+                        <button type="button" class="btn btn-secondary next-button">下一題</button>
                     </form>`;
 
                     $("#skintypequestion").append(questionHtml);
@@ -91,6 +92,16 @@ $(document).ready(function () {
 
     $("body").on("click", ".continue-button", function () {
         showForm(currentIndex);
+    });
+
+    $("body").on("click", ".next-button", function () {
+        var next_form = $(this).closest("form").nextAll("form.question-form").first();
+        if (next_form.length > 0) {
+            showForm(currentIndex + 1);
+            currentIndex++;
+            // console.log("Current answers:", answers);
+            // console.log("Current index:", currentIndex);
+        }
     });
 
     $("body").on("change", "input[name^='answer_']", function () {
@@ -137,10 +148,13 @@ $(document).ready(function () {
     $("body").on("click", ".back-button", function () {
         if (currentIndex > 0) {
             currentIndex--;
-            showForm(currentIndex);
-
-            // 清除当前选中的答案状态
+            
+            // 取消当前已选中的选项，允许重新选择相同选项
             $(`input[name='answer_${Math.floor(currentIndex / 11)}_${currentIndex % 11}']`).prop('checked', false);
+
+            showForm(currentIndex);
+            // console.log("Current answers after going back:", answers);
+            // console.log("Current index after going back:", currentIndex);
         }
     });
 
@@ -162,7 +176,6 @@ $(document).ready(function () {
         "DSNT": "易燃易爆的",
         "DSPW": "活在常下的"
     };
-    
 
     function calculateSkinType(answer_list) {
         // 分成四部分分别计算
