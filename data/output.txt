@@ -1,128 +1,634 @@
 [
     {
-        "question": "在照片中，您的臉看起來很油光：",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "有時"},
-        "choice_c": {"value": 3, "text": "經常"},
-        "choice_d": {"value": 4, "text": "總是"}
+        "step": "Step1: 乾性皮膚（Dry – D）VS. 油性皮膚(Oil – O)",
+        "questions": [
+            {
+                "question": "洗完臉後的2-3小時，不在臉上塗任何保濕/防曬產品、化妝水、粉底或任何產品，這時如果在明亮的光線下照鏡子，您的前額和臉頰部位：",
+                "choices": [
+                    {"value": 1, "text": "非常粗糙、出現皮屑，或者如布滿灰塵般的晦暗"},
+                    {"value": 2, "text": "仍有緊繃感"},
+                    {"value": 3, "text": "能夠恢復正常的潤澤感而且在鏡中看不到反光"},
+                    {"value": 4, "text": "能看到反光"}
+                ]
+            },
+            {
+                "question": "在自己以往的照片中，您的臉是否顯得光亮：",
+                "choices": [
+                    {"value": 1, "text": "從不，或您從未意識到有這種情況"},
+                    {"value": 2, "text": "有時會"},
+                    {"value": 3, "text": "經常會"},
+                    {"value": 4, "text": "歷來如此"}
+                ]
+            },
+            {
+                "question": "上妝或使用粉底，但是不塗乾的粉（如質地乾燥的粉餅或散粉），2-3小時後，您的妝容看起來：",
+                "choices": [
+                    {"value": 1, "text": "出現皮屑，有的粉底在皺紋裡結成小塊"},
+                    {"value": 2, "text": "光滑"},
+                    {"value": 3, "text": "出現光亮"},
+                    {"value": 4, "text": "出現條紋並且光亮"},
+                    {"value": 2.5, "text": "我從不用粉底"}
+                ]
+            },
+            {
+                "question": "身處乾燥的環境中，如果不用保濕產品或防曬產品，您的面部皮膚：",
+                "choices": [
+                    {"value": 1, "text": "感覺很乾或乾裂"},
+                    {"value": 2, "text": "感覺緊繃"},
+                    {"value": 3, "text": "感覺正常"},
+                    {"value": 4, "text": "看起來有光亮，或從不覺得此時需要用保濕產品"},
+                    {"value": 2.5, "text": "不知道"}
+                ]
+            },
+            {
+                "question": "照一照有放大功能的化妝鏡，從您的臉上能看到多少大頭針尖大小的毛孔：",
+                "choices": [
+                    {"value": 1, "text": "一個都沒有"},
+                    {"value": 2, "text": "T區（前額和鼻子）有一些"},
+                    {"value": 3, "text": "很多"},
+                    {"value": 4, "text": "非常多"},
+                    {"value": 2.5, "text": "不知道（注意：反復檢查後仍不能判斷狀況時才選此項）"}
+                ]
+            },
+            {
+                "question": "如果讓您描述自己的面部皮膚特徵，您會選擇：",
+                "choices": [
+                    {"value": 1, "text": "乾性"},
+                    {"value": 2, "text": "中性（正常）"},
+                    {"value": 3, "text": "混合性"},
+                    {"value": 4, "text": "油性"}
+                ]
+            },
+            {
+                "question": "當您使用泡沫豐富的皂類潔面產品洗臉後，您感覺：",
+                "choices": [
+                    {"value": 1, "text": "感覺乾燥、或有刺痛的感覺"},
+                    {"value": 2, "text": "感覺有些乾燥但是沒有刺痛感"},
+                    {"value": 3, "text": "感覺沒有異常"},
+                    {"value": 4, "text": "感到皮膚出油"},
+                    {"value": 2.5, "text": "我從不使用皂類或其他泡泡類的潔面產品（如果這是因為它們會使您的皮膚感覺乾和不舒服，請選第1項）"}
+                ]
+            },
+            {
+                "question": "如果不使用保濕產品，您的臉部覺得乾嗎：",
+                "choices": [
+                    {"value": 1, "text": "總是如此"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "很少"},
+                    {"value": 4, "text": "從不"}
+                ]
+            },
+            {
+                "question": "您臉上有阻塞的毛孔嗎（包括“黑頭”和“白頭”）：",
+                "choices": [
+                    {"value": 1, "text": "從來沒有"},
+                    {"value": 2, "text": "很少有"},
+                    {"value": 3, "text": "有時有"},
+                    {"value": 4, "text": "總是出現"}
+                ]
+            },
+            {
+                "question": "T區（前額和鼻子一帶）出油嗎：",
+                "choices": [
+                    {"value": 1, "text": "從沒有油光"},
+                    {"value": 2, "text": "有時會有出油現象"},
+                    {"value": 3, "text": "經常有出油現象"},
+                    {"value": 4, "text": "總是油油的"}
+                ]
+            },
+            {
+                "question": "臉上塗過保濕產品後2-3小時，您的兩頰部位：",
+                "choices": [
+                    {"value": 1, "text": "非常粗糙、脫皮或者如布滿灰塵般的晦暗"},
+                    {"value": 2, "text": "乾燥光滑"},
+                    {"value": 3, "text": "有輕微的油光"},
+                    {"value": 4, "text": "有油光、滑膩、或者您從不覺得有必要、事實上也不怎麼使用保濕產品"}
+                ]
+            }
+        ]
     },
     {
-        "question": "如果您只上粉底不上散粉，兩到三小時後您的妝容會看起來：",
-        "choice_a": {"value": 1, "text": "斑駁或結塊"},
-        "choice_b": {"value": 2, "text": "平滑"},
-        "choice_c": {"value": 3, "text": "發亮"},
-        "choice_d": {"value": 4, "text": "條紋和發亮"},
-        "choice_e": {"value": 2.5, "text": "我不使用粉底"}
+        "step": "Step2: 敏感性皮膚（Sensitive－S）VS.耐受性皮膚(Resistant－R)",
+        "questions": [
+            {
+                "question": "臉上會出現紅色突起：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "至少一個月出現一次"},
+                    {"value": 4, "text": "至少每周出現一次"}
+                ]
+            },
+            {
+                "question": "護膚產品（包括潔面、保濕、化妝水、彩妝等）會引發潮紅、癢或是刺痛嗎：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是如此"},
+                    {"value": 2.5, "text": "我從不使用以上產品"}
+                ]
+            },
+            {
+                "question": "曾被診斷為痤瘡或紅斑痤瘡（也稱酒渣鼻）：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "沒去看過，但朋友或熟人說我有"},
+                    {"value": 3, "text": "是的"},
+                    {"value": 4, "text": "是的，而且症狀嚴重"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "如果您佩帶的首飾不是14k金以上的，皮膚發紅的幾率：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是如此"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "防曬產品令您的皮膚發癢、灼燒、生痘/粒粒或發紅：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是如此"},
+                    {"value": 2.5, "text": "我從不使用防曬劑"}
+                ]
+            },
+            {
+                "question": "曾被診斷為局部性皮炎、濕疹、或接觸性皮炎：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "朋友或熟人說我有"},
+                    {"value": 3, "text": "是的"},
+                    {"value": 4, "text": "是的，而且症狀嚴重"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "您佩帶戒指的皮膚部位發紅的幾率：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是發紅"},
+                    {"value": 2.5, "text": "我不戴戒指"}
+                ]
+            },
+            {
+                "question": "芳香泡泡浴、按摩油或是身體潤膚霜會令您的皮膚生痘/粒粒、發癢、或感覺乾燥：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "很少"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是"},
+                    {"value": 2.5, "text": "我從不使用這類產品（如果您不使用的原因是因為會引起以上的症狀，請選第4項）"}
+                ]
+            },
+            {
+                "question": "有使用酒店里提供的香皂洗臉或洗澡的經歷，卻沒什麼問題：",
+                "choices": [
+                    {"value": 1, "text": "是的"},
+                    {"value": 2, "text": "大部分時候沒什麼"},
+                    {"value": 3, "text": "不行，我會發痘或發紅發癢"},
+                    {"value": 4, "text": "我可不敢用，以前用過，總是不舒服"},
+                    {"value": 2.5, "text": "我總是用自己帶的這些東西，所以不確定"}
+                ]
+            },
+            {
+                "question": "您的直系親屬中有人被診斷為局部性皮炎、濕疹、氣喘和/或過敏嗎：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "據我所知有一個"},
+                    {"value": 3, "text": "好幾個"},
+                    {"value": 4, "text": "數位家庭成員有局部性皮炎、濕疹、氣喘和/或過敏"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "使用含香料的洗滌劑清洗，以及經過防靜電處理和烘乾的床單時：",
+                "choices": [
+                    {"value": 1, "text": "皮膚反應良好"},
+                    {"value": 2, "text": "感覺有點乾"},
+                    {"value": 3, "text": "發癢"},
+                    {"value": 4, "text": "發癢發紅"},
+                    {"value": 2.5, "text": "不確定，因為我從不用這些東西"}
+                ]
+            },
+            {
+                "question": "中等強度的運動後、感到有壓力或出現生氣等其他強烈情緒時，面部皮膚發紅的幾率：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是如此"}
+                ]
+            },
+            {
+                "question": "喝過酒精飲料後，臉變紅的情況：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是這樣，我不喝酒就是因為這個"},
+                    {"value": 2.5, "text": "我從不飲酒"}
+                ]
+            },
+            {
+                "question": "吃辣或熱的食物/飲料會導致皮膚發紅的情況：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是這樣"},
+                    {"value": 2.5, "text": "我從不吃辣（如果是因為怕皮膚發紅請選第4項）"}
+                ]
+            },
+            {
+                "question": "臉和鼻子的部位有多少能用肉眼看到的皮下破裂毛細血管（呈紅色或藍色），或者您曾經為此做過治療：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "有少量（全臉，包括鼻子有1-3處）"},
+                    {"value": 3, "text": "有一些（全臉，包括鼻子有4-6處）"},
+                    {"value": 4, "text": "很多（全臉，包括鼻子有7處或以上）"}
+                ]
+            },
+            {
+                "question": "從照片上看，您的臉看上去發紅嗎：",
+                "choices": [
+                    {"value": 1, "text": "從不，或沒注意有這樣的問題"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "是這樣"}
+                ]
+            },
+            {
+                "question": "人們會問您是不是被曬傷了之類的話，而其實您並沒有：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "總是這樣"},
+                    {"value": 4, "text": "我總被曬傷（這可夠糟糕的！）"}
+                ]
+            },
+            {
+                "question": "您因為塗了彩妝、防曬霜或其他護膚品發生發紅、發癢或面部腫脹：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時"},
+                    {"value": 3, "text": "經常"},
+                    {"value": 4, "text": "總是這樣"},
+                    {"value": 2.5, "text": "我從不用這些東西（如果不用是因為曾經發生過以上症狀，請選第4項）"}
+                ]
+            },
+            {
+                "question": "是否曾被醫生確診為痤瘡、紅斑痤瘡、接觸性皮膚炎或濕疹：",
+                "choices": [
+                    {"value": 5, "text": "曾被皮膚科醫師確診"},
+                    {"value": 2, "text": "曾被其他科的醫生（如內科醫生）醫生認為您患了上述病症"},
+                    {"value": 0, "text": "沒有"}
+                ]
+            }
+        ]
     },
     {
-        "question": "如果您不使用保濕霜，您的臉部皮膚感覺緊繃：",
-        "choice_a": {"value": 4, "text": "總是"},
-        "choice_b": {"value": 2, "text": "有時"},
-        "choice_c": {"value": 1, "text": "很少"},
-        "choice_d": {"value": 1, "text": "從不"}
+        "step": "Step3: 色素沉著性皮膚（Pigmented－P）VS.非色素沉著性皮膚(Non-pigmented－N)",
+        "questions": [
+            {
+                "question": "長過痘痘或毛髮倒生後的部位會留下深棕色/黑色的印記：",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "有時會"},
+                    {"value": 3, "text": "經常會"},
+                    {"value": 4, "text": "總是這樣"},
+                    {"value": 2.5, "text": "我從沒長過痘痘或倒生的毛髮"}
+                ]
+            },
+            {
+                "question": "被割傷後，棕色的印記（不是新愈合時粉色的疤）會殘留多久：",
+                "choices": [
+                    {"value": 1, "text": "我不會留下棕色的疤痕"},
+                    {"value": 2, "text": "1周"},
+                    {"value": 3, "text": "幾周"},
+                    {"value": 4, "text": "好幾個月"}
+                ]
+            },
+            {
+                "question": "當您懷孕、服用口服避孕藥丸或其他荷爾蒙替代類藥物時，臉上會長出多少深色斑點：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "1個"},
+                    {"value": 3, "text": "少量"},
+                    {"value": 4, "text": "很多"},
+                    {"value": 2.5, "text": "這個問題不適用於我（因為我是男性、或者我從未懷孕或服過以上藥物、或者我不確認是否有斑點）"}
+                ]
+            },
+            {
+                "question": "您的上唇或面頰有深色斑點/塊嗎？或者曾經有，您通過一些方法把它們除去了：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "我不確定"},
+                    {"value": 3, "text": "是的，它們現在（曾經）比較明顯"},
+                    {"value": 4, "text": "是的，它們現在（曾經）非常明顯"}
+                ]
+            },
+            {
+                "question": "日曬之後斑點會加深嗎：",
+                "choices": [
+                    {"value": 1, "text": "我沒有深色斑點"},
+                    {"value": 2, "text": "無法確定"},
+                    {"value": 3, "text": "有點加深"},
+                    {"value": 4, "text": "變深很多"},
+                    {"value": 2.5, "text": "我整天都塗防曬霜從不直接接觸陽光（如果是因為您特別擔心或曾經被曬出斑來才這樣做，請選第4項）"}
+                ]
+            },
+            {
+                "question": "您的面部皮膚曾經被診斷為有色素沉積、或有淺/深棕/灰色斑：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "有一次，但後來消失了"},
+                    {"value": 3, "text": "是的"},
+                    {"value": 4, "text": "是的，而且狀況嚴重"},
+                    {"value": 2.5, "text": "無法確認"}
+                ]
+            },
+            {
+                "question": "臉部、前胸、後背或手臂是否有或者曾經有小的棕色斑點（雀斑或曬斑）：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "有一些（1-5個）"},
+                    {"value": 3, "text": "有很多（6-15個）"},
+                    {"value": 4, "text": "非常多（16個以上）"}
+                ]
+            },
+            {
+                "question": "幾個月來第一次曬太陽（例如剛入春或入夏），皮膚感覺：",
+                "choices": [
+                    {"value": 1, "text": "灼熱"},
+                    {"value": 2, "text": "灼熱然後變黑"},
+                    {"value": 3, "text": "直接變黑"},
+                    {"value": 4, "text": "我的膚色已經很深了，我也分不清這樣是否會變得更深"}
+                ]
+            },
+            {
+                "question": "連續數天暴露於陽光下：",
+                "choices": [
+                    {"value": 1, "text": "灼熱甚至起泡，但我的膚色沒有什麼變化"},
+                    {"value": 2, "text": "膚色變深了一點"},
+                    {"value": 3, "text": "膚色變深了很多"},
+                    {"value": 4, "text": "我的膚色已經很深了，我也分不清這樣是否會變得更深"},
+                    {"value": 2.5, "text": "不確定（如果近期沒有，可以回憶一下小時候的經歷）"}
+                ]
+            },
+            {
+                "question": "日曬有沒有引起雀斑（一種直徑1-2mm，大頭針的針尖大小的平滑的棕色斑點）：",
+                "choices": [
+                    {"value": 1, "text": "不，我從沒長過雀斑"},
+                    {"value": 2, "text": "每年長出一些新的"},
+                    {"value": 3, "text": "經常長出新的"},
+                    {"value": 4, "text": "我的膚色已經很深了，看不出是否新長了雀斑"},
+                    {"value": 2.5, "text": "從不曬太陽"}
+                ]
+            },
+            {
+                "question": "您的父母中有人長雀斑嗎？如果有，請描述程度。如果僅有一方有，請按其程度選擇。如果兩方都有，請根據雀斑更多的那一方的情況選擇：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "有一些"},
+                    {"value": 3, "text": "臉上有很多"},
+                    {"value": 4, "text": "臉上、前胸、後背、頸脖肩膀都有很多"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "您的天然髮色是：",
+                "choices": [
+                    {"value": 1, "text": "金色"},
+                    {"value": 2, "text": "棕色"},
+                    {"value": 3, "text": "黑色"},
+                    {"value": 4, "text": "紅色"}
+                ]
+            },
+            {
+                "question": "家庭的直系親屬中是否有黑素瘤病史：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "有一個人"},
+                    {"value": 3, "text": "一人以上"},
+                    {"value": 4, "text": "我自己有黑素瘤病史"},
+                    {"value": 2.5, "text": "不確定"}
+                ]
+            },
+            {
+                "question": "全身被陽光曬到的皮膚中是否已經出現深色斑點：",
+                "choices": [
+                    {"value": 5, "text": "是"},
+                    {"value": 0, "text": "否"}
+                ]
+            }
+        ]
     },
     {
-        "question": "您有堵塞的毛孔（黑頭或白頭）：",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "很少"},
-        "choice_c": {"value": 3, "text": "有時"},
-        "choice_d": {"value": 4, "text": "總是"}
-    },
-    {
-        "question": "護膚產品（包括潔面乳、保濕霜、爽膚水和化妝品）會導致您的臉部出現痤瘡、發疹、發癢或刺痛：",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "很少"},
-        "choice_c": {"value": 3, "text": "經常"},
-        "choice_d": {"value": 4, "text": "總是"}
-    },
-    {
-        "question": "您是否曾被診斷出痤瘡或酒渣鼻？",
-        "choice_a": {"value": 1, "text": "沒有"},
-        "choice_b": {"value": 2, "text": "朋友說我有"},
-        "choice_c": {"value": 3, "text": "是"},
-        "choice_d": {"value": 4, "text": "是，嚴重情況"}
-    },
-    {
-        "question": "防曬霜會使您的皮膚發癢、灼熱、起疹子或變紅：",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "很少"},
-        "choice_c": {"value": 3, "text": "經常"},
-        "choice_d": {"value": 4, "text": "總是"}
-    },
-    {
-        "question": "您可以在臉部和身體上使用普通肥皂而沒有問題嗎？",
-        "choice_a": {"value": 1, "text": "可以"},
-        "choice_b": {"value": 2, "text": "大多數時間可以"},
-        "choice_c": {"value": 3, "text": "不可以"}
-    },
-    {
-        "question": "您的上唇或臉頰有任何深色斑點嗎？",
-        "choice_a": {"value": 1, "text": "沒有"},
-        "choice_b": {"value": 2, "text": "不確定"},
-        "choice_c": {"value": 3, "text": "有，但不太明顯"},
-        "choice_d": {"value": 4, "text": "有，非常明顯"}
-    },
-    {
-        "question": "當您曬太陽時，臉上的深色斑點會加重嗎？",
-        "choice_a": {"value": 1, "text": "我沒有深色斑點"},
-        "choice_b": {"value": 2, "text": "不確定"},
-        "choice_c": {"value": 3, "text": "稍微加重"},
-        "choice_d": {"value": 4, "text": "加重很多"}
-    },
-    {
-        "question": "您的自然頭髮顏色是什麼？",
-        "choice_a": {"value": 1, "text": "金色"},
-        "choice_b": {"value": 2, "text": "棕色"},
-        "choice_c": {"value": 3, "text": "黑色"},
-        "choice_d": {"value": 4, "text": "紅色"}
-    },
-    {
-        "question": "當您曬太陽時，您會長雀斑嗎？",
-        "choice_a": {"value": 1, "text": "沒有"},
-        "choice_b": {"value": 2, "text": "一些"},
-        "choice_c": {"value": 3, "text": "經常"},
-        "choice_d": {"value": 4, "text": "我的皮膚已經很黑，所以很難說"},
-        "choice_e": {"value": 2.5, "text": "我從不曬太陽"}
-    },
-    {
-        "question": "當您幾個月後第一次曬太陽時，您的皮膚會：",
-        "choice_a": {"value": 1, "text": "只曬傷"},
-        "choice_b": {"value": 2, "text": "曬傷然後變黑"},
-        "choice_c": {"value": 3, "text": "變黑"}
-    },
-    {
-        "question": "您有臉部皺紋嗎？",
-        "choice_a": {"value": 1, "text": "沒有，即使是動作時也沒有"},
-        "choice_b": {"value": 2, "text": "只有在我動臉時"},
-        "choice_c": {"value": 3, "text": "動作時和休息時都有一些"},
-        "choice_d": {"value": 4, "text": "即使我不笑或皺眉，也有皺紋"}
-    },
-    {
-        "question": "您一生中是否有持續曬太陽超過兩周每年？如果有，總共多少年？請計算任何戶外活動，如打高爾夫球、戶外工作等。",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "一到五年"},
-        "choice_c": {"value": 3, "text": "五到十年"},
-        "choice_d": {"value": 4, "text": "超過十年"}
-    },
-    {
-        "question": "您一生中是否曾經進行過每年不超過兩周的季節性曬太陽？（包括暑假）如果有，多久一次？",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "一到五年"},
-        "choice_c": {"value": 3, "text": "五到十年"},
-        "choice_d": {"value": 4, "text": "超過十年"}
-    },
-    {
-        "question": "您曾經多少次使用過日光浴床？",
-        "choice_a": {"value": 1, "text": "從不"},
-        "choice_b": {"value": 2, "text": "一到五次"},
-        "choice_c": {"value": 3, "text": "五到十次"},
-        "choice_d": {"value": 4, "text": "很多次"}
-    },
-    {
-        "question": "您的自然皮膚顏色（未曬太陽時）是什麼？",
-        "choice_a": {"value": 1, "text": "深色"},
-        "choice_b": {"value": 2, "text": "中等"},
-        "choice_c": {"value": 3, "text": "淺色"},
-        "choice_d": {"value": 4, "text": "非常淺色"}
+        "step": "Step4: 皺紋性皮膚（wrinkled－W）VS.緊致性皮膚(Tight－T)",
+        "questions": [
+            {
+                "question": "您現在臉上有皺紋嗎？",
+                "choices": [
+                    {"value": 1, "text": "沒有，即使是在做微笑、皺眉、抬眉毛這些表情的時候也沒有"},
+                    {"value": 2, "text": "只有當我微笑、皺眉、抬眉時才有"},
+                    {"value": 3, "text": "是的，做表情時有，不運動到的部位也有少量的"},
+                    {"value": 4, "text": "即使面無表情，也有明顯的皺紋"}
+                ]
+            },
+            {
+                "question": "您母親的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "您父親的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "您外祖母的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "您外祖父的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "您祖母的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "您祖父的面部皮膚看起來：",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和其他同齡人一樣"},
+                    {"value": 3, "text": "比同齡人年老5歲的樣子"},
+                    {"value": 4, "text": "老不止5歲的樣子"},
+                    {"value": 2.5, "text": "問題不適用於我，我是被收養的，或者記不清了"}
+                ]
+            },
+            {
+                "question": "在您過往所有的經歷中，您有意或是無意被曬黑過超過2周以上的時間.如果有，請計算一下這些時間加起來總共有多長？",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "累計1-5年"},
+                    {"value": 3, "text": "累計5-10年"},
+                    {"value": 4, "text": "10年以上"}
+                ]
+            },
+            {
+                "question": "在您過往所有的經歷中，您是否在一年當中的無論任何季節日曬2周左右並使皮膚顏色變深？如果有，有多少？",
+                "choices": [
+                    {"value": 1, "text": "從不"},
+                    {"value": 2, "text": "不到5次"},
+                    {"value": 3, "text": "5-10次"},
+                    {"value": 4, "text": "超過10次"}
+                ]
+            },
+            {
+                "question": "根據您居住的地區，您所受到的日照屬於什麼程度呢？",
+                "choices": [
+                    {"value": 1, "text": "很少量；我住的地區以陰天為主"},
+                    {"value": 2, "text": "有一些；我既在少日照的地方生活過，也在日照比較多的地方生活過"},
+                    {"value": 3, "text": "中度的；我居住的地方日照程度中等"},
+                    {"value": 4, "text": "很多；我住在熱帶、南方或是日照時間很長的地方"}
+                ]
+            },
+            {
+                "question": "您覺得自己看起來幾歲？",
+                "choices": [
+                    {"value": 1, "text": "比同齡人年輕1-5歲"},
+                    {"value": 2, "text": "和大部分同齡人一樣"},
+                    {"value": 3, "text": "比同齡人老1-5歲"},
+                    {"value": 4, "text": "老5歲以上"}
+                ]
+            },
+            {
+                "question": "在過去5年中，您是否因為室外運動或活動有意無意地讓自己的肌膚被曬黑過？(若頻率不匹配選擇最接近的)",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "一個月會有一次"},
+                    {"value": 3, "text": "一周會有一次"},
+                    {"value": 4, "text": "每天"}
+                ]
+            },
+            {
+                "question": "是否曾經嘗試過或經常進行“美黑療程”？",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "1-5次"},
+                    {"value": 3, "text": "5-10次"},
+                    {"value": 4, "text": "很多次"}
+                ]
+            },
+            {
+                "question": "在過去所有時間中，您抽煙（或被迫吸入二手煙）的數量：",
+                "choices": [
+                    {"value": 1, "text": "沒有"},
+                    {"value": 2, "text": "幾包"},
+                    {"value": 3, "text": "幾包至很多包"},
+                    {"value": 4, "text": "我每天吸煙"},
+                    {"value": 2.5, "text": "我不吸煙，但是成長在吸煙家庭，或是與總是在我身邊吸煙的人一同生活或工作"}
+                ]
+            },
+            {
+                "question": "請描述您生活的地區的污染狀況：",
+                "choices": [
+                    {"value": 1, "text": "空氣清潔新鮮"},
+                    {"value": 2, "text": "除了一年當中的某些時候，這裡的空氣清潔新鮮"},
+                    {"value": 3, "text": "有輕度污染"},
+                    {"value": 4, "text": "重度污染"}
+                ]
+            },
+            {
+                "question": "請描述您使用下列藥物（或含這些成份的護膚品）的時間長短：維甲酸（即維A酸，如”維迪軟膏”），達芙文（Differin）等：",
+                "choices": [
+                    {"value": 1, "text": "很多年"},
+                    {"value": 2, "text": "偶爾用"},
+                    {"value": 3, "text": "年輕長痤瘡痘痘時用過"},
+                    {"value": 4, "text": "從沒用過"}
+                ]
+            },
+            {
+                "question": "目前吃水果蔬菜的頻率：",
+                "choices": [
+                    {"value": 1, "text": "每餐都吃"},
+                    {"value": 2, "text": "一天一次"},
+                    {"value": 3, "text": "偶爾吃"},
+                    {"value": 4, "text": "從不吃"}
+                ]
+            },
+            {
+                "question": "從過去到現在，蔬菜水果在整個飲食中的比例（果汁不算）：",
+                "choices": [
+                    {"value": 1, "text": "75-100%"},
+                    {"value": 2, "text": "25-75%"},
+                    {"value": 3, "text": "10-25%"},
+                    {"value": 4, "text": "0-10%"}
+                ]
+            },
+            {
+                "question": "您的自然膚色為：",
+                "choices": [
+                    {"value": 1, "text": "深色"},
+                    {"value": 2, "text": "中等膚色"},
+                    {"value": 3, "text": "淺色"},
+                    {"value": 4, "text": "很淺"}
+                ]
+            },
+            {
+                "question": "您的種族：",
+                "choices": [
+                    {"value": 1, "text": "非洲裔美國人/加勒比人/黑人"},
+                    {"value": 2, "text": "亞裔/印度/地中海人"},
+                    {"value": 3, "text": "拉丁美洲/西班牙人後裔"},
+                    {"value": 4, "text": "高加索人（白種人）"}
+                ]
+            },
+            {
+                "question": "您的年齡是否大於或等於65歲：",
+                "choices": [
+                    {"value": 5, "text": "是"},
+                    {"value": 0, "text": "否"}
+                ]
+            }
+        ]
     }
 ]

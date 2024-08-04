@@ -84,7 +84,7 @@ body {
 
 .ac-custom input[type="checkbox"]:checked + label,
 .ac-custom input[type="radio"]:checked + label {
-	color: #fff;
+	color: #805242;
 }
 
 .ac-custom input[type="checkbox"]:checked + label::before,
@@ -105,7 +105,7 @@ body {
 }
 
 .ac-custom svg path {
-	stroke: #fdfcd3;
+	stroke: #805242;
 	stroke-width: 13px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
