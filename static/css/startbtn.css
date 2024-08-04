@@ -44,7 +44,7 @@
     opacity:0;
 }
 .a-btn span:nth-child(1){
-    background:transparent url(/static/img/star.png) no-repeat center center;
+    background:transparent url("../img/star.png") no-repeat center center;
     opacity:0.2;
 }
 .a-btn:hover{
