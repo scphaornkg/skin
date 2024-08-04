@@ -94,8 +94,6 @@ $(document).ready(function () {
         showForm(currentIndex);
     });
 
-   
-
     $("body").on("click", ".next-button", function () {
         // Check if the current question has been answered
         if (answers[currentIndex] === undefined) {
@@ -110,7 +108,6 @@ $(document).ready(function () {
             }
         }
     });
-
     $("body").on("change", "input[name^='answer_']", function () {
         var answer = parseFloat($(this).val());
         answers[currentIndex] = answer;
