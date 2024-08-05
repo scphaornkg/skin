@@ -46,6 +46,7 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     margin-right: 10px;
+    background-color: #e0e0e0;
 }
 
 .progress-bar {
@@ -60,7 +61,7 @@ footer {
     white-space: nowrap;
     width: 20%;
     text-align: center;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -100,11 +101,9 @@ footer {
     .intro-page h1 {
         font-size: 12vw;
     }
-
     .intro-page p {
         font-size: 5.5vw;
     }
-
     .intro-page .continue-button {
         font-size: 7vw;
     }
@@ -122,7 +121,6 @@ footer {
     .flexWidth h2 {
         font-size: 4vw !important;
     }
-
     .flexWidth label {
         font-size: 3vw !important;
     }
@@ -132,7 +130,6 @@ footer {
     .flexWidth h2 {
         font-size: 6vw !important;
     }
-
     .flexWidth label {
         font-size: 4.5vw !important;
     }
